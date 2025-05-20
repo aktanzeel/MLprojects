@@ -18,18 +18,12 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
-name="MLprojects",
+name='MLprojects',
 version='0.1.0',
 author='Tanzeel akhtar',
 author_email='akhtartanzeel792@gmail.com',
-packages=find_packages,
-install_requires=get_requirements(requirements.txt)
-
-
-
-
-
-
+packages=find_packages(),
+install_requires=get_requirements('requirements.txt')
 
 
 )
